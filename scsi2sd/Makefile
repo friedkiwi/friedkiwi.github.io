@@ -4,12 +4,16 @@ MARKDOWN=markdown
 SOURCES=index.md
 OBJECTS=$(SOURCES:.md=.html)
 
-
 $(OBJECTS):
 	$(MARKDOWN) $(OBJECTS:.html=.md) -t $(TITLE) $< > $@
-
+	git add $(OBJECTS:.html=.md) $@
 
 clean:
 	rm *.html
 
-all: $(SOURCES) $(OBJECTS)
+push:
+	git commit
+	git push
+
+
+all:  $(OBJECTS)
