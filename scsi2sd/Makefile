@@ -16,4 +16,4 @@ push:
 	git push
 
 
-all:  $(OBJECTS)
+all: clean  $(OBJECTS)
