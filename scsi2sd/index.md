@@ -55,7 +55,7 @@ disk B:
   00000020  34 33 30 20 20 20 20 20                           |430     |
   00000028`
 
-Upon searching my stack of disks, I found an older disk which works in my machine, but it's missing the 0xc0 and 0xc4 tables - it only has the custom 0xc table. That makes it an ideal candidate for the OS to check if it's a valid IBM disk or not.
+Upon searching my stack of disks, I found an older disk which works in my machine, but it's missing the 0xc0 and 0xc4 tables - it only has the custom 0x3 table. That makes it an ideal candidate for the OS to check if it's a valid IBM disk or not.
 
 The following tables have been observed on my disks:
 
