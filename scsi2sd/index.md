@@ -57,7 +57,9 @@ disk B:
   00000028
 ```
 
-Upon searching my stack of disks, I found an older disk which works in my machine, but it's missing the 0xc0 and 0xc4 tables - it only has the custom 0x3 table. That makes it an ideal candidate for the OS to check if it's a valid IBM disk or not.
+Upon searching my stack of disks, I found an older disk which works in my machine,
+but it's missing the 0xc0 and 0xc4 tables - it only has the custom 0x3 table.
+That makes it an ideal candidate for the OS to check if it's a valid IBM disk or not.
 
 The following tables have been observed on my disks:
 
@@ -85,6 +87,11 @@ disk C:
 00000028
 ```
 
+Upon comparing them, there is only one difference, at `0x0F`: the older ( and smaller )
+dis has a `0x13` value, while the newer and larger disks both have `0x46`. The value does
+not seem to correlate with the size (2x36GB and 1x17GB disks), so I suspect this is just
+a lookup value which is matched with a list of allowed values. However, I need to wait until 
+my SCSI2SD adapters arrive to see how the machine responds to changing that value.
 
 ## 2015-12-28
 
