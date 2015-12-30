@@ -6,8 +6,17 @@
 <body>
 <h1 id="scsi2sd-400">SCSI2SD/400</h1>
 <p>I have a few older AS/400 machines, however, their SCSI disks are starting to<br>go to data-heaven, and it&#39;s getting increasingly hard to find the right disks.<br>IBM forces you to use the right types of disks for your machine, ruling out<br>third party replacement disks. To complicate matters even more, a non-standard<br>sector size is being used.</p>
-<p>However, there is a neat SCSI-to-SD adapter from [codesrc<br><a href="http://www.codesrc.com/mediawiki/index.php?title=SCSI2SD">http://www.codesrc.com/mediawiki/index.php?title=SCSI2SD</a>] which is based on a<br>Cypress microcontroller, and the firmware is Open Source. Since my machine is<br>only a hobbyist machine, I don&#39;t expect heavy load, so it should be possible to<br>just run it off a couple of SD cards using this. Due to the OSS nature, it<br>should also be feasible to add the non-standard IBM gimmicks.</p>
+<p>However, there is a neat SCSI-to-SD adapter from <a href="http://www.codesrc.com/mediawiki/index.php?title=SCSI2SD">codesrc</a> which is based on a<br>Cypress microcontroller, and the firmware is Open Source. Since my machine is<br>only a hobbyist machine, I don&#39;t expect heavy load, so it should be possible to<br>just run it off a couple of SD cards using this. Due to the OSS nature, it<br>should also be feasible to add the non-standard IBM gimmicks.</p>
 <h2 id="2015-12-30">2015-12-30</h2>
+<p>I connected two same-sized IBM-branded disks to a Sun machine with a working<br>SCSI controller, and discovered that the following VPD tables are available:</p>
+<ul>
+<li>0x3</li>
+<li>0xc0</li>
+<li>0xc4</li>
+<li>di</li>
+<li>iod</li>
+<li>sn</li>
+</ul>
 <h2 id="2015-12-28">2015-12-28</h2>
 <p>I ordered two SCSI2SD cards today, and a bunch of adapters to connect them.<br>They should arrive at mine&#39;s during the next couple of days, however, it might<br>have a bit of a delay due to the holiday season.</p>
 </body>
