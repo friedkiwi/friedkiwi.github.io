@@ -25,6 +25,16 @@ SCSI controller, and discovered that the following VPD tables are available:
 * iod
 * sn
 
+The 0xc0 table contained the following information on the disks:
+
+disk A:
+    00000000  00 c0 00 14 00 00 00 41  20 20 20 20 20 20 20 20  |.......A        |
+    00000010  20 01 00 04 01 0c 00 00                           | .......|
+    00000018
+disk B:
+    00000000  00 c0 00 14 00 00 00 41  20 20 20 20 20 20 20 20  |.......A        |
+    00000010  20 01 00 04 01 0c 00 00                           | .......|
+    00000018
 
 ## 2015-12-28
 
